@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="https://github.com/tu-usuario/tu-repo/assets/logoh.png" alt="XBunker HTTP Logo" width="300"/>
+  <img src="https://github.com/Pr0fEs0r-X/Xbunker-Server-v-1.0/logoh.png" alt="XBunker HTTP Logo" width="300"/>
 
   # 🛡️ XBunker HTTP v 1.0
   **Servidor Local Estático + PHP Auto-instalable**
