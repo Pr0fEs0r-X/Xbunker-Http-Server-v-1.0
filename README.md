@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/badge/PHP-8.x-777BB4?style=for-the-badge&logo=php" />
 </div>
 
-# 🛡️ XBunker HTTP v 1.0 (Full Stack)
+# 🛡️ (Full Stack)
 
 **Servidor Web Portátil de Seguridad y Desarrollo Local**. Una herramienta de ingeniería inversa y desarrollo web ultraligera diseñada para levantar entornos LAMP/LEMP completos en cuestión de segundos, sin exponer la red del usuario y sin dejar rastros en el sistema operativo.
 
