@@ -1,142 +1,127 @@
-
-
 <div align="center">
-  <img width="400" height="150" alt="logoh" src="https://github.com/user-attachments/assets/597bb62e-e10a-49a3-9b79-82253cafc025" />
- 
-  # 🛡️ XBunker HTTP v 1.0
-  **Servidor Local Estático + PHP Auto-instalable**
-
-  [![Made with Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)](https://www.python.org/)
-  [![Windows](https://img.shields.io/badge/Windows-10/11-0078D6?logo=windows&logoColor=white)](https://www.microsoft.com/windows)
-  [![PHP Support](https://img.shields.io/badge/PHP-8.x-777BB4?logo=php&logoColor=white)](https://www.php.net/)
+  <img width="483" height="193" alt="logoh" src="https://github.com/user-attachments/assets/99f1d131-893b-4c3d-ae8a-4776ea4c9706" />
+</div>  
+<br>
+<div align="center">
+  <img src="https://img.shields.io/badge/Version-1.0-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Stable-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/OS-Windows_10/11-0078D6?style=for-the-badge&logo=windows" />
+  <img src="https://img.shields.io/badge/Language-Python-yellow?style=for-the-badge&logo=python" />
+  <img src="https://img.shields.io/badge/PHP-8.x-777BB4?style=for-the-badge&logo=php" />
 </div>
 
----
+# 🛡️ XBunker HTTP v 1.0 (Full Stack)
 
-## 📖 Descripción
-
-**XBunker HTTP** es un servidor web de archivos estáticos ultra ligero diseñado para entornos 100% aislados. Funciona exclusivamente bajo el loopback (`127.0.0.1`), lo que garantiza **cero exposición** a redes locales o a Internet.
-
-Su característica principal es la **instalación automática y silenciosa de PHP**. Si el equipo no tiene PHP instalado, el programa se encarga de descomprimirlo, configurarlo (`php.ini`) y añadirlo al sistema automáticamente con un solo clic.
-
-Ideal para pruebas locales, desarrollo web rápido, o presentaciones de proyectos sin necesidad de instalar XAMPP, WAMP o servidores pesados.
+**Servidor Web Portátil de Seguridad y Desarrollo Local**. Una herramienta de ingeniería inversa y desarrollo web ultraligera diseñada para levantar entornos LAMP/LEMP completos en cuestión de segundos, sin exponer la red del usuario y sin dejar rastros en el sistema operativo.
 
 ---
 
-## ✨ Características Principales
+## 🌟 Características Principales
 
-- 🐘 **Soporte PHP Integrado:** Detecta si PHP falta y lo instala automáticamente desde un `.zip` interno.
-- 🔒 **Aislamiento Total:** 100% Aislado (Loopback): Solo escucha en 127.0.0.1. Cero exposición a redes locales o Internet.
-- ⚡ **Puerto Dinámico:** Evita conflictos asignando un puerto libre automáticamente.
-- 🗄️ **SQLite 3 Activado:** Base de datos relacional lista para usar. Crea archivos .db directamente en tu carpeta web sin necesidad de servicios externos.
-- 🛑 **Apagado Instantáneo:** Cierra el servidor y mata los hilos sin dejar procesos residuales (Zombies).
-- 🎨 **Interfaz Moderna:** Diseño oscuro, personalizado, sin bordes predeterminados de Windows y arrastre de ventana libre.
-- 📦 **Totalmente Portátil:** Un solo archivo .exe. Llévalo en tu USB y ejecútalo en cualquier PC con Windows.
-
----
-
-## 🚀 ¿Cómo usar el programa (.exe)?
-
-Sigue estos sencillos pasos para comenzar a usar XBunker HTTP:
-
-### 1. Descargar y Ejecutar
-Descarga el archivo `XBunkerHTTP.exe` desde la sección de [Releases](../../releases).
-* **Primera vez (Para usar PHP):** Haz **clic derecho** sobre el `.exe` y selecciona **"Ejecutar como Administrador"**. *(Esto es estrictamente necesario solo la primera vez para que Windows permita instalar PHP en `C:\php`)*.
-* **Siguientes veces:** Puedes abrirlo normalmente (doble clic).
-
-### 2. Seleccionar tu Carpeta Web
-Haz clic en el botón **📁 Seleccionar Carpeta Web** y elige la carpeta donde tienes tus archivos `index.html` o `.php`.
-
-### 3. Habilitar PHP (Opcional)
-Si tu proyecto usa PHP, marca la casilla **🐘 Habilitar soporte PHP**. 
-*Si el programa detectó que PHP no existía, ya lo habrá instalado en este paso. Verás un mensaje de "Instalación Completada".*
-
-### 4. Iniciar el Servidor
-Haz clic en **▶️ Iniciar**.
-* El sistema asignará un puerto libre automáticamente (ej. `8080`).
-* Puedes hacer clic directamente sobre el enlace generado en la interfaz **(Enlace: http://127.0.0.1:8080)** para abrir tu navegador.
-
-### 5. Detener el Servidor
-Cuando termines, simplemente haz clic en **⏹️ Detener** o cierra la ventana con la "X" roja. El servidor se apagará al instante.
+*   🐘 **Motor PHP 8 Nativo:** Instalador automático silencioso. No requiere XAMPP, WAMP ni configuraciones manuales.
+*   🗄️ **Base de Datos Integrada:** Soporte completo para **SQLite 3** sin servicios externos.
+*   🔒 **HTTPS / SSL Portátil:** Genera certificados de seguridad X.509 internamente. **No requiere OpenSSL en el sistema**.
+*   ♻️ **URL Rewrite:** Soporte para rutas amigables nativas (Compatible con Laravel, CodeIgniter, etc.).
+*   🧪 **Mini Postman Integrado:** Cliente HTTP visual para probar APIs y endpoints sin salir de la app.
+*   🗄️ **Gestor de Base de Datos Visual:** Integración nativa con *DB Browser for SQLite* para manejar datos gráficamente.
+*   🎼️ **100% Aislado (Loopback):** Escucha exclusivamente en `127.0.0.1`. Cero exposición a redes locales o internet.
+*   🧹 **Sin Residuos:** Apagado instantáneo. Al cerrar la app, el servidor se mata a sí mismo sin dejar puertos abiertos.
+*   🎨 **Interfaz Moderna:** Diseño "Dark Mode" sin bordes nativos de Windows, personalizable y arrastrable.
 
 ---
 
-## ⚙️ ¿Qué hace el instalador automático de PHP?
+## 🧠 Tecnologías Utilizadas y Cómo Funcionan
 
-Si ejecutas el programa como Administrador y no detecta PHP, XBunker realiza lo siguiente en segundo plano:
+XBunker HTTP funciona como un orquestador extremadamente ligero, evitando dependencias pesadas como Apache o Nginx.
 
-1. Extrae el archivo interno `php-8.x.x.zip` hacia `C:\php`.
-2. Renombra `php.ini-development` a `php.ini`.
-3. Edita automáticamente el `php.ini` para descomentar y habilitar las extensiones más comunes:
-   - `mysqli`
-   - `pdo_mysql`
-   - `gd`
-   - `mbstring`
-   - `curl`
-4. Registra `C:\php` en las **Variables de Entorno (PATH)** de Windows de forma permanente.
-
-*(Si por algún motivo Windows bloquea el PATH por falta de permisos, el programa seguirá funcionando usando la ruta directa `C:\php\php.exe` para esa sesión).*
+| Componente | Tecnología | ¿Cómo se usa en XBunker? |
+| :--- | :--- | :--- |
+| **Interfaz Gráfica** | Python 3 + Tkinter | Genera una ventana sin bordes nativos, maneja el entorno gráfico, los eventos de arrastre y los logs en tiempo real. |
+| **Servidor Web** | `http.server` & `socketserver` | Crea un servidor TCP dentro de Python vinculado al `127.0.0.1` en un puerto dinámico. |
+| **Procesamiento PHP** | `subprocess` (CGI Nativo) | Cuando llega un `.php`, Python construye las variables de entorno CGI (`REQUEST_METHOD`, `QUERY_STRING`, etc.), ejecuta `php.exe` en un subproceso y devuelve el `stdout` al navegador. |
+| **Base de Datos** | SQLite 3 + PDO | PHP se conecta a archivos `.db` locales de forma nativa. El programa incluye un gestor visual externo para manipular estas bases de datos sin escribir código. |
+| **Certificados SSL** | `cryptography` | En lugar de llamar a binarios de Windows, Python genera matemáticamente una llave RSA y un certificado X.509 autofirmado en memoria y los aplica al socket del servidor. |
+| **Enrutamiento** | `urllib.parse` (Python) | Un parser personalizado intercepta las peticiones. Si la ruta no es un archivo real (ej: `/usuario/1`), la redirige internamente a `index.php` simulando un `.htaccess`. |
+| **Cliente API** | `urllib.request` | El Mini Postman construye peticiones HTTP, inyecta cabeceras JSON y maneja la respuesta, ignorando errores de certificados autofirmados mediante `ssl.create_default_context()`. |
+| **Gestión de Archivos** | `zipfile` + `tempfile` | Extrae PHP y DB Browser directamente desde archivos `.zip` embebidos en tiempo de ejecución hacia carpetas temporales de Windows, logrando portabilidad total con un solo `.exe`. |
 
 ---
 
-## 🛠️ Para Desarrolladores (Compilar desde el código)
+## 📖 Datos de Uso y Guía Rápida
 
-Si deseas compilar el `.exe` tú mismo, asegúrate de tener los requisitos y seguir esta estructura:
+### Primer inicio (Requiere Administrador)
+1. Haz clic derecho sobre `XBunkerHTTP.exe` y selecciona **"Ejecutar como Administrador"** (Solo la primera vez, para instalar PHP 8 en `C:\php` y registrarlo en el PATH del sistema).
+2. El programa se encargará de descomprimir, configurar el `php.ini` y habilitar las extensiones necesarias.
 
-### Requisitos:
-- Python 3.8+
-- `pip install pillow pyinstaller`
+### Uso cotidiano
+1. **Seleccionar Directorio:** Haz clic en "📁 Seleccionar Carpeta Web" y elige la raíz de tu proyecto.
+2. **Configurar Opciones:**
+   * **🐘 PHP + SQLite:** Actívalo para ejecutar archivos `.php` y conectarte a bases de datos.
+   * **🔒 HTTPS:** Actívalo para forzar el protocolo seguro (útil para probar PWA, WebRTC o APIs seguras).
+3. **Iniciar Servidor:** Presiona `▶️ Iniciar`. El programa asignará un puerto automáticamente (ej. 8080).
+4. **Probar:** Haz clic en el enlace generado en la barra inferior o usa el botón **🧪 Postman** para probar tus endpoints.
 
-### Estructura requerida antes de compilar:
-```text
-📁 tu_proyecto/
-├── xbunkerv10.py          (El código principal)
-├── http.ico               (Icono del ejecutable)
-├── logo.png               (Imagen del Splash Screen)
-├── logoh.png              (Imagen del Header en la UI)
-└── php-8.5.5.zip          (Descargado desde php.net)
-```
+### Uso de Herramientas Integradas
+* **🗄️ Abrir DB SQLite:** Abre la interfaz gráfica para crear tablas, insertar datos y hacer consultas SQL directamente sobre los archivos `.db` de tu carpeta web.
+* **🎼 Abrir Composer:** Abre una terminal temporal apuntando a tu carpeta para instalar dependencias de PHP.
+* **🧪 Mini Postman:** Abre una ventana flotante para enviar métodos `GET`, `POST`, `PUT`, `DELETE` con cuerpos JSON y analizar las respuestas del servidor.
 
-### Comando de compilación:
+---
+
+## 👨‍💻 Desarrollador
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="150">
+        <img src="https://img.shields.io/badge/Rodolfo_Hernández_Baz-blue?style=for-the-badge" />
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <h3>Pr@fEsOr X</h3>
+        <p><i>Especialista en Ciberseguridad, Hacking Ético e Ingeniería Inversa</i></p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+**Empresa / Organización:**  
+🛡️ **Rhino Forensci & Reverse Toolkit**
+
+**Web del Desarrollador:**  
+🔗 [rodolfohbaz.info](https://rodolfohbaz.info/)
+
+**Web de la Empresa:**  
+🔗 [Rhino Security Tool's](https://rhinosecurity.xyz/)
+
+---
+
+## ⚙️ Notas Técnicas para Compilación
+
+Si deseas compilar el código fuente tú mismo, asegúrate de tener la siguiente estructura y dependencias:
+
+**Dependencias de Python:**
 ```bash
-pyinstaller --onefile --windowed --icon=http.ico --add-data "logo.png;." --add-data "logoh.png;." --add-data "php-8.5.5.zip;." --name "XBunkerHTTP" xbunkerv10.py
+pip install pyinstaller pillow cryptography
+```
+
+**Archivos requeridos en la carpeta del proyecto:**
+* `xbunker_http.py` (Código fuente)
+* `php-8.5.5.zip` (Binarios de PHP)
+* `dbbrowser.zip` (Carpeta portable de DB Browser for SQLite comprimida)
+* `composer.phar` (Gestor de paquetes de PHP)
+* `logo.png` / `logoh.png` (Recursos gráficos)
+
+**Comando de compilación (Solución al error 'ordinal 380' de OpenSSL):**
+Es recomendable usar un archivo `.spec` limpiando el PATH para evitar conflictos de OpenSSL con Git en Windows.
+
+```cmd
+pyinstaller --onefile --windowed --name "XBunkerHTTP" --add-data "php-8.5.5.zip;." --add-data "logo.png;." --add-data "logoh.png;." --add-data "composer.phar;." --add-data "dbbrowser.zip;." xbunker_http.py
 ```
 
 ---
-
-## ❓ Solución de Problemas (Troubleshooting)
-
-**¿El programa dice "Descomprimiendo PHP" pero no pasa nada o se cierra?**
-* **Causa:** Tu Antivirus (especialmente Windows Defender) está bloqueando silenciosamente la creación de la carpeta `C:\php` o el movimiento de archivos.
-* **Solución:** Desactiva temporalmente la protección en tiempo real, o añade una exclusión en tu Antivirus para la unidad `C:\` y para el archivo `.exe`.
-
-**¿No me deja ejecutar como Administrador o sale un error de permisos?**
-* Asegúrate de que no tengas ninguna otra terminal, explorador de archivos o programa usando la carpeta `C:\php` en ese momento.
-
-**¿El servidor se inicia pero las páginas PHP muestran error 500?**
-* Verifica que la instalación automática haya terminado correctamente abriendo `C:\php` y comprobando que exista el archivo `php.exe` y `php.ini`.
-
----
-
-## 📜 Créditos
-
-Desarrollado como parte del ecosistema de herramientas de ciberseguridad de libre uso.
-
-| Rol | Nombre |
-| :--- | :--- |
-| **Desarrollador** | **Rodolfo Hernández Baz** / Pr@fEsOr X |
-| **Organización** | **Rhino Security Tool´s** |
-
-🌐 **Web del Desarrollador:** [rodolfohbaz.info](https://rodolfohbaz.info/)  
-🌐 **Web de la Empresa:** [rhinosecurity.xyz](https://rhinosecurity.xyz/)
-
----
-
 <div align="center">
-  <sub>Construido con 💻 Python y Tkinter. Distribuido para fines educativos y de desarrollo local.</sub>
+  <sub>Desarrollado con Python 3 | Pensado para la Portabilidad y la Seguridad</sub>
 </div>
 ```
-
-### Consejos extra para tu GitHub:
-1. **Sube las imágenes:** En la líneas donde dice `<img src="https://github.com/tu-usuario/tu-repo/assets/logoh.png".../>`, cambia esa ruta por la URL real de la imagen una vez que la subas a tu repositorio de GitHub (arrastrando la imagen al editar el README en GitHub).
-2. **Sube el `.zip` de PHP pesado en "Releases":** En lugar de compilar el `.exe` con el zip adentro (lo cual hará que tu `.exe` pese unos 30-40MB), puedes omitir el `--add-data "php-8.5.5.zip;."` del PyInstaller, y en tu código hacer que el programa se descargue el zip de Internet la primera vez si no lo encuentra. Pero si prefieres tener **todo en 1 solo archivo offline**, está perfecto tal como lo hicimos.
