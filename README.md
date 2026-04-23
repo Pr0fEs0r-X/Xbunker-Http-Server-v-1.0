@@ -26,11 +26,12 @@ Ideal para pruebas locales, desarrollo web rápido, o presentaciones de proyecto
 ## ✨ Características Principales
 
 - 🐘 **Soporte PHP Integrado:** Detecta si PHP falta y lo instala automáticamente desde un `.zip` interno.
-- 🔒 **Aislamiento Total:** Trabaja exclusivamente en `127.0.0.1`. Imposible de atacar desde fuera.
+- 🔒 **Aislamiento Total:** 100% Aislado (Loopback): Solo escucha en 127.0.0.1. Cero exposición a redes locales o Internet.
 - ⚡ **Puerto Dinámico:** Evita conflictos asignando un puerto libre automáticamente.
+- 🗄️ **SQLite 3 Activado:** Base de datos relacional lista para usar. Crea archivos .db directamente en tu carpeta web sin necesidad de servicios externos.
 - 🛑 **Apagado Instantáneo:** Cierra el servidor y mata los hilos sin dejar procesos residuales (Zombies).
 - 🎨 **Interfaz Moderna:** Diseño oscuro, personalizado, sin bordes predeterminados de Windows y arrastre de ventana libre.
-- 📦 **Todo en Uno (`--onefile`):** Un solo `.exe` portable. No requiere instalación.
+- 📦 **Totalmente Portátil:** Un solo archivo .exe. Llévalo en tu USB y ejecútalo en cualquier PC con Windows.
 
 ---
 
