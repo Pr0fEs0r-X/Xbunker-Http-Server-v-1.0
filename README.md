@@ -73,7 +73,7 @@ XBunker HTTP funciona como un orquestador extremadamente ligero, evitando depend
 <div align="center">
   <table>
     <tr>
-      <td align="center" width="150">
+      <td align="center" width="400">
         <img src="https://img.shields.io/badge/Rodolfo_Hernández_Baz-blue?style=for-the-badge" />
       </td>
     </tr>
