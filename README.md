@@ -128,6 +128,23 @@ A continuación, se documenta en detalle absoluto cada módulo plano del program
     3. Este hilo revisa el tamaño del archivo cada 2 segundos. Si detecta crecimiento, lee las líneas nuevas, filtra las que contienen palabras clave como "Fatal", "Parse" o "Warning", y las inyecta con color rojo en una nueva pestaña llamada "🐛 Errores PHP" debajo del Log principal.
     4. Al detener el servidor, el hilo se mata de forma segura.
 
+## 22. 🌐 Subdominios personalizados locales (modifica hosts)
+Permite acceder a tu servidor local usando nombres de dominio personalizados (ej. `miapp.local`) en lugar de usar la IP `127.0.0.1`.
+
+* **Uso:** Haz clic en el botón `Subdominios`, escribe el nombre (ej. `rodolfohbaz.localhost`), elige la IP y agrega.
+* **Flush DNS:** Limpia la caché DNS de Windows automáticamente al agregar o eliminar para que los cambios surtan efecto al instante.
+* **Limpieza:** Incluye opción para eliminar de forma segura solo las entradas creadas por XBunker en el archivo `hosts`.
+> ⚠️ **Requiere ejecutar XBunker como Administrador** para poder modificar el archivo `C:\Windows\System32\drivers\etc\hosts`.
+
+
+
+## 23. 🪟 Inicio automático con Windows
+Permite que XBunker Http se ejecute automáticamente al encender o iniciar sesión en tu computadora.
+
+* **Uso:** Haz clic en el botón `Inicio Auto` para activar o desactivar la función.
+* **Funcionamiento:** Crea una entrada segura en el registro de Windows para arrancar con el sistema.
+> ⚠️ **Nota:** Si mueves el archivo `.exe` a otra carpeta, deberás desactivar y volver a activar esta opción para actualizar la nueva ruta en el registro.
+
 ---
 
 ## 🏗️ Arquitectura del Sistema (Para Developers)
