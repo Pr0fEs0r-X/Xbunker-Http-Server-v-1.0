@@ -7,6 +7,7 @@
   <p>Desarrollado por <a href="https://rodolfohbaz.info/">Rodolfo Hernández Baz</a> (Pr@fEsOr X) | <a href="https://rhinosecurity.xyz/">Rhino Security Tool's</a></p>
 </div>
 <div align="center">
+  <a href="https://rhinosecurity.xyz/XtoolsR/VisitCounterv1/api/stats.php?code=2KfbnHR4" target="_blank" rel="noopener"><img src="https://rhinosecurity.xyz/XtoolsR/VisitCounterv1/counter.php?code=2KfbnHR4" alt="Visitas:" style="border:0"></a>
    <br>
   <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/PHP-8.x-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
